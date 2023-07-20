@@ -1,0 +1,293 @@
+<!-- 
+Descripción: este archivo HTML contiene la página principal del sitio web.
+Estructura general:
+- Encabezado
+- Barra de navegación
+- Intro
+- Work
+- About
+- My journey
+- Contact
+- Footer
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Mónica Añez Portfolio</title>
+    <meta name="title" content="Mónica Añez Portfolio" />
+    <meta name="description" content="" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://monicaanez.com/" />
+    <meta property="og:title" content="Mónica Añez Portfolio" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://monicaanez.com/" />
+    <meta property="twitter:title" content="Mónica Añez Portfolio" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link href="https://api.fontshare.com/v2/css?f=clash-display@200,400,700,500,600,1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+
+    <!-- BANDA
+        Descripción: esta banda tiene una animación tipo marquesina hecha con css y es un componente que se repite en varias partes de esta página
+    -->
+        
+        <div class="Banda-top">
+            <div>
+                <span>+++ DIGITAL DESIGN +++ FRONTEND DEVELOPMENT +++ DIGITAL DESIGN +++ FRONTEND DEVELOPMENT</span>
+                <span>+++ DIGITAL DESIGN +++ FRONTEND DEVELOPMENT +++ DIGITAL DESIGN +++ FRONTEND DEVELOPMENT</span>
+            </div>
+        </div>
+
+    <!-- HEADER 
+        Descripción: en esta sección tenemos la barra de navegación fija.
+    -->
+
+            <header class="Header">
+
+                <div class="Header-border">
+                    <h1 class="Header-h1">
+                        <a class="Header-a" href="index.html"><img class="Header-logo" src="assets/MA_logo.png" alt="Logo Mónica Añez" title="Logo Mónica Añez"></a>
+                    </h1>
+                </div>
+                <button class="Header-open">
+                    <svg class="Header-svg" fill="#000000" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1920 1468.412v112.94H0v-112.94h1920Zm0-564.706v112.941H0V903.706h1920ZM1920 339v112.941H0V339h1920Z" fill-rule="evenodd"></path> </g></svg>
+                </button>
+                <nav class="Header-nav">
+                    <button class="Header-close">
+                        <svg class="Header-closesvg" viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <title>close [#1511]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-419.000000, -240.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <polygon points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446"> </polygon> </g> </g> </g> </g></svg>
+                    </button>
+                    <ul class="Header-ul">
+                        <li class="Header-li"><a class="Header-link" href="#home">HOME</a></li>
+                        <li class="Header-li"><a class="Header-link" href="#work">WORK</a></li>
+                        <li class="Header-li"><a class="Header-link" href="#about">ABOUT ME</a></li>
+                        <li class="Header-li"><a class="Header-link" href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+    <!-- MAIN
+        Descripción: esta sección contiene el contenido principal de la web.
+    -->
+
+    <main id="home">
+
+        <section class="Section">
+
+    <!-- INTRO 
+        Descripción: en esta sección hay una pequeña introducción.
+    -->
+
+            <div class="Intro">
+
+                <h3 class="Intro-h3">
+                    Nice to meet you, I'm <span class="Intro-bold">Mónica</span>. I'm a <span class="Intro-bold">digital UX/UI designer</span> and <span class="Intro-bold">frontend developer</span> based in <span class="Intro-bold">Madrid</span>. 
+                    My goal is to merge creativity and technology to create attractive visual solutions.
+                </h3>
+
+                <div class="Intro-imgs">
+                    <img class="Intro-rueda" src="assets/Rueda-intro.png" alt="Animated wheel digital design and frontend development">
+                    <img class="Intro-flecha" src="assets/Flecha_abajo.png" alt="Arrow moving down and up">
+                    <img class="Intro-blur" src="assets/Blur-amarillo.png" alt="Yellow blur background">
+                </div>
+
+            </div>
+
+    <!-- WORK
+        Descripción: en esta sección hay una galería de los trabajos.
+    -->
+
+            <div class="Banda">
+                <div>
+                <span>+++ MY WORK +++ WEB DESIGN +++ MY WORK +++ FRONTEND DEVELOPMENT +++</span>
+                <span>+++ MY WORK +++ WEB DESIGN +++ MY WORK +++ FRONTEND DEVELOPMENT +++</span>
+                </div>
+            </div>
+          
+            <div class="Work" id="work">
+
+                <div class="Column">
+                    <div class="Column-overflow">
+                        <a class="Column-link" href="gastrorigen.html"><img class="Column-img" src="assets/Gastrorigen.jpg" alt="Gastrorigen web design" title="Gastrorigen web design" loading="lazy"></a>
+                    </div>
+                        <div class="Column-wrapper">
+                            <a class="Column-a" href="gastrorigen.html"><h4 class="Column-h4"><span class="Column-span">GASTRORIGEN</span></h4></a>
+                            <h5 class="Column-h5">From farm to table</h5>
+                        </div>
+                </div>
+
+                <div class="Column">
+                    <div class="Column-overflow">
+                        <a class="Column-link" href="igualdad.html"><img class="Column-img" src="assets/Portada_landing_igualdad.jpg" alt="Equality landing page design" title="Equality landing page design" loading="lazy"></a>
+                    </div>
+                        <div class="Column-wrapper">
+                            <a class="Column-a" href="igualdad.html"><h4 class="Column-h4"><span class="Column-span">EQUALITY LANDING PAGE</span></h4></a>
+                            <h5 class="Column-h5">Attracting leads</h5>
+                        </div>
+                </div>
+
+                <div class="Column">
+                    <div class="Column-overflow">
+                        <a class="Column-link" href="beats.html"><img class="Column-img" src="assets/Beats.jpg" alt="Beats web design" title="Beats web design" loading="lazy"></a>
+                    </div>
+                        <div class="Column-wrapper">
+                            <a class="Column-a" href="beats.html"><h4 class="Column-h4"><span class="Column-span">BEATS WEB</span></h4></a>
+                            <h5 class="Column-h5">Coding of the website</h5>
+                        </div>
+                </div>
+
+            </div>
+
+            <div class="Banda">
+                <div>
+                <span>+++ MY WORK +++ UX/UI +++ MY WORK +++ UX/UI +++ MY WORK +++ UX/UI</span>
+                <span>+++ MY WORK +++ UX/UI +++ MY WORK +++ UX/UI +++ MY WORK +++ UX/UI</span>
+                </div>
+            </div>
+
+            <div class="Work">
+
+                <div class="Column">
+                    <div class="Column-overflow">
+                        <a class="Column-link" href="guiajando.html"><img class="Column-img" src="assets/Portada_guiajando.jpg" alt="Guiajando screens" title="Guiajando screens" loading="lazy"></a>
+                    </div>  
+                        <div class="Column-wrapper">
+                            <a class="Column-a" href="guiajando.html"><h4 class="Column-h4"><span class="Column-span">GUIAJANDO</span></h4></a>
+                            <h5 class="Column-h5">For tidy travelers</h5>
+                        </div>
+                </div>
+
+                <div class="Column">
+                    <div class="Column-overflow">
+                        <a class="Column-link" href="root.html"><img class="Column-img" src="assets/Portada_rootapp.jpg" alt="Root app screens" title="Root app screens" loading="lazy"></a>
+                    </div>
+                        <div class="Column-wrapper">
+                            <a class="Column-a" href="root.html"><h4 class="Column-h4"><span class="Column-span">ROOT APP</span></h4></a>
+                            <h5 class="Column-h5">An app for crop care</h5>
+                        </div>
+                    </div>
+
+                <div class="Column">
+                    <div class="Column-overflow">
+                        <a class="Column-link" href="tastetrack.html"><img class="Column-img" src="assets/Portada_tastetrack.jpg" alt="Taste track screens" title="Taste track screens" loading="lazy"></a>
+                    </div>    
+                        <div class="Column-wrapper">
+                            <a class="Column-a" href="tastetrack.html"><h4 class="Column-h4"><span class="Column-span">TASTE TRACK</span></h4></a>
+                            <h5 class="Column-h5">Food truck app</h5>
+                        </div>
+                </div>
+
+            </div>
+
+    <!-- ABOUT
+        Descripción: en esta sección hay una foto y un texto describiendo mi carrera profesional.
+    -->
+        
+            <div class="About" id="about">
+
+                <img class="About-img" src="assets/Foto_Monica.png" alt="Mónica's photo" title="Mónica's photo" loading="lazy">
+                <div class="About-text">
+                    <h2 class="About-h2">About me</h2>
+                    <p class="About-p">
+                        After graduating in architecture, I discovered my passion for design and decided to focus my career on graphic design. However, my curiosity and eagerness to learn led me to explore new opportunities in the field of user experience (UX) and user interface (UI) design. Attracted by the combination of aesthetics and functionality, I decided to turn my career around and dive into the world of digital design. I trained in the latest design trends and gained knowledge in specialized tools and software to carry out app and website design projects.<br><br>
+                        Recently, I have further expanded my skills by completing a course in frontend development. I can now not only design great experiences with attractive interfaces, but also bring my designs to life. My frontend experience allows me to understand technical limitations and collaborate effectively with developers to achieve an optimal user experience.
+                    </p>
+                </div>
+            </div>
+
+    <!-- JOURNEY
+        Descripción: en esta sección hay un gráfico descriptivo sobre mi trayecto
+    -->
+
+            <div class="Journey">
+
+                <h2 class="Journey-h2">My journey</h2>
+                <img class="Journey-img" src="assets/Journey.png" alt="Mónica's journey from architecture, including graphic design, UX/UI to frontend development" title="Mónica's journey" loading="lazy">
+
+            </div>
+
+    <!-- FINAL -->
+
+            <div class="Final-imgs">
+                <img class="Final-rueda" src="assets/Rueda-final.png" alt="Animated wheel digital design and frontend development" title="Animated wheel digital design and frontend development" loading="lazy">
+                <img class="Final-flecha" src="assets/Flecha_abajo.png" alt="Arrow moving down and up" title="Arrow moving down and up" loading="lazy">
+                <img class="Final-blur" src="assets/Blur-amarillo.png" alt="Yellow blur background" title="Yellow blur background" loading="lazy">
+            </div>
+
+    <!-- FORMULARIO
+        Descripción: En esta sección hay un formulario de contacto para poder contactar conmigo y mis redes sociales.
+    -->
+
+            <div class="Contact">
+                <div class="Contact-wrapper">
+                    <form class="Contact-form" action="enviar-formulario.php" method="post">
+                        <h5 class="Contact-h5">NAME</h5>
+                        <input type="text" class="Contact-input" id="name" placeholder="NAME" name="name" value="" required>
+                        <h5 class="Contact-h5">EMAIL</h5>
+                        <input type="email" class="Contact-input" id="email" placeholder="EMAIL" name="email" value="" required>
+                        <h5 class="Contact-h5">ASK ME ANYTHING</h5>
+                        <textarea class="Contact-input" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                        <button class="Contact-button" id="submit" type="submit" value="SEND">Send</button>
+                    </form>
+                </div>
+
+
+                <ul class="Contact-social" id="contact">
+                    <li class="Contact-li"><a class="Contact-a" href="https://www.linkedin.com/in/monicaanez/" target="_blank"><img class="Contact-img" src="assets/Linkedin.png" alt="Linkedin" title="Linkedin" loading="lazy"></a></li>
+                    <li class="Contact-li"><a href="https://www.instagram.com/monadas/" target="_blank"><img class="Contact-img" src="assets/Instagram.png" alt="Instagram" title="Instagram" loading="lazy"></a></li>
+                    <li class="Contact-li"><a href="https://github.com/monianez" target="_blank"><img class="Contact-img" src="assets/Github.png" alt="Github" title="Github" loading="lazy"></a></li>
+                </ul>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER
+        Descripción: en esta sección está el footer.
+    -->
+
+    <footer class="Footer">
+
+        <h5 class="Footer-h5">Designed & developed by Mónica Añez</h5>
+
+        <div class="Banda">
+            <div>
+            <span>+++ DIGITAL DESIGN +++ FRONTEND DEVELOPMENT +++ DIGITAL DESIGN +++ FRONTEND DEVELOPMENT</span>
+            <span>+++ DIGITAL DESIGN +++ FRONTEND DEVELOPMENT +++ DIGITAL DESIGN +++ FRONTEND DEVELOPMENT</span>
+            </div>
+        </div>
+        
+    </footer>
+    
+    <a href="#home" class="Flechaup">
+        <svg class="Flechaup-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 7.93911L18.0305 13.9722L16.9696 15.0326L12.0001 10.0609L7.0305 15.0326L5.9696 13.9722L12.0001 7.93911Z"></path> </g></svg>
+    </a>
+
+    
+</body>
+</html>

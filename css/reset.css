@@ -1,0 +1,71 @@
+/*---------------
+reset.css:
+Contiene el reset y variables de todas las páginas
+---------------*/
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+/*-- Quita los estilos de las listas --*/
+li{ list-style: none; }
+
+/*-- Quita los estilos de los textos --*/
+h1 , h2 , h3 , h4 , h5 , h6 , strong{
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*-- Quita los estilos de los vínculos --*/
+a{
+    display: block;
+    color:inherit;
+    text-decoration: none;
+}
+
+/*-- Hace que los párrafos y vínculos sean inline --*/
+p a{
+    display: inline;
+}
+
+/*-- Quita los estilos de las imágenes y vídeos --*/
+img , video {
+    display: block;
+    max-width: 100%;
+    width:100%;
+}
+
+/*-- Quita los estilos de los svgs --*/
+svg{
+    display: block;
+    fill: currentColor;
+}
+
+/*-- Quita los estilos de los formularios --*/
+form , input , textarea , label , button , fieldset , legend  , select {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color:inherit;
+    background-color: transparent;
+}
+
+:root{
+    /*-- Branding --*/
+    font-size: 100%;
+    /*-- Colores --*/
+    --color-yellow: #FFF500; /*-- Color predominante del branding --*/
+    --color-black: black; /*-- Color secundario del branding --*/
+    --color-white: white; /*-- Color terciario del branding --*/
+    --font-titles:'Clash Display', sans-serif; /*-- Tipografía para los títulos --*/
+    --font-body:'Work Sans', sans-serif; /*-- Tipografía para el texto corrido --*/
+}
+
+/*-- Hace que el efecto de scroll sea smooth --*/
+html{
+    scroll-behavior: smooth;
+}

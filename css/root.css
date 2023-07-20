@@ -1,0 +1,438 @@
+/*---------------
+root.css:
+- Text styles
+- Banda (componente que se repite en varias partes de la página)
+- Header
+- Content
+- Proyecto
+- Footer
+---------------*/
+
+/*--------------- Text styles ---------------*/
+
+h2 {
+    font-family: var(--font-titles);
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: var(--font-titles);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+h4 {
+    font-family: var(--font-body);
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 1.5625rem;
+}
+
+h5 {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+p {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+}
+
+/*-- Banda top
+       Descripción: estilos para el componente "Banda top", es diferente a "Banda" porque está fija arriba
+  --*/
+
+.Banda-top {
+    width: 100%;
+    height: 2.1875rem;
+
+    background-color: var(--color-yellow);
+    font-family: var(--font-body);
+    font-size: 1.75rem;
+    border-top: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+
+    position: fixed;
+    z-index: 5;
+    overflow: hidden;
+
+  }
+  
+  .Banda-top div {
+    display: block;
+    width: 200%;
+    height: 30px;
+  
+    position: absolute;
+    overflow: hidden;
+  
+    animation: marquesina 20s linear infinite;
+  }
+  
+  .Banda-top span {
+    float: left;
+    width: 50%;
+  }
+
+  /*-- Animación tipo marquesina --*/
+
+  @keyframes marquesina {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+
+  /*-- Banda
+       Descripción: estilos para el componente "Banda" que se repite en varias partes de la página
+  --*/
+
+  .Banda {
+    width: 100%;
+    height: 2.1875rem;
+
+    background-color: var(--color-yellow);
+    font-family: var(--font-body);
+    font-size: 1.75rem;
+    border-top: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+
+    position: relative;
+    overflow: hidden;
+
+  }
+  
+  .Banda div {
+    display: block;
+    width: 200%;
+    height: 30px;
+  
+    position: absolute;
+    overflow: hidden;
+  
+    animation: marquesina 20s linear infinite;
+  }
+  
+  .Banda span {
+    float: left;
+    width: 50%;
+  }
+  
+  /*-- Animación tipo marquesina --*/
+
+  @keyframes marquesina {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+
+/*-- Header
+     Descripción: los estilos de la barra de navegación.
+     Estructura:
+     - Header
+     - Header-border
+     - Header-h1
+     - Header-open
+     - Header-svg
+     - Header-nav
+     - Header-close
+     - Header-ul
+     - Header-link
+     - Header-li
+--*/
+
+.Header {
+    width: 100%;
+    background-color: var(--color-white);
+    border-bottom: 2px solid var(--color-black);
+
+    padding: 0 2rem 0 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+
+    position: fixed;
+    top: 2.1875rem;
+    z-index: 5;
+}
+
+.Header-border {
+    width: 12.5rem;
+    border-right: 2px solid var(--color-black);
+}
+
+.Header-h1 {
+    width: 5rem;
+    margin: auto;
+}
+
+.Header-open {
+    width: 2.5rem;
+    display: none;
+    cursor: pointer;
+
+    position: fixed;
+    right: 30px;
+}
+
+.Header-svg {}
+
+.Header-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.25rem;
+
+    position: fixed;
+    right: 1.875rem;
+}
+
+.Header-close {
+    width: 1.875rem;
+    cursor: pointer;
+    padding-top: .9375rem;
+    display: none;
+
+    position: fixed;
+    top: 2.1875rem;
+}
+
+.Header-ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+/*-- Estilo para cuando una palabra del menú está activa (con javascript) --*/
+.Header-link.isActive {
+    font-weight: 600;
+}
+
+/*-- Estilo para cuando una palabra del menú está activa (con javascript) --*/
+.Header-link.isActive::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .1125rem;
+    background-color: var(--color-black);
+}
+
+.Header-li {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.Header-li:hover {
+    font-weight: 600;
+}
+
+.Header-li::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: .1125rem;
+    background-color: var(--color-black);
+    transition: all 0.4s ease;
+}
+
+.Header-li:hover::after {
+    width: 100%;
+}
+
+.Header-li:active {
+    font-weight: 800;
+}
+
+/*-- Responsive del Header --*/
+
+@media (max-width: 800px) {
+    .Header {
+        position: fixed;
+    }
+    .Header-open{
+        display: block;
+    }
+    .Header-nav{
+        width: 0;
+        background-color: var(--color-white);
+        border-bottom: 2px solid var(--color-black);
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: flex;
+        flex-flow: column nowrap;
+
+        transition: all .5s ease;
+    }
+    .Header-nav.isActive{
+        width: 300px;
+        border-left: 2px solid var(--color-black);
+    }
+
+    .Header-close {
+        display: block;
+        margin-left: 12.1875rem;
+    }
+    .Header-ul{
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem 2rem 3rem;
+    }
+    .Header-li {
+        padding-bottom: 0.5rem;
+    }
+
+}
+
+
+
+/*-- Content
+     Descripción: los estilos de la introducción.
+     Estructura:
+     - Content
+     - Content-h2
+     - Content-wrapper
+     - Content-p
+     - Content-button
+     - Content-h5
+--*/
+
+.Content {
+    width: 100%;
+    border-bottom: 2px solid var(--color-black);
+
+    padding-top: 12vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Content-h2 {
+    font-size: 2rem;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.Content-wrapper {
+    border-left: 2px solid var(--color-black);
+    padding: 2rem;
+}
+
+.Content-p {
+
+}
+
+.Content-button {
+    width: 12.5rem;
+    background-color: var(--color-yellow);
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+}
+
+.Content-button:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.Content-h5 {
+    width: 100%;
+    font-weight: 500;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+
+.Content-h5::after {
+    content: url(../assets/Flecha_derecha.svg);
+    display: block;
+    transform: scale(0.7);
+}
+
+.Content-button:hover .Content-h5::after {
+    content: url(../assets/Flecha_derecha_blanca.svg);
+    transform: scale(0.7);
+}
+
+/*-- Responsive del Content --*/
+
+@media (max-width: 600px) {
+    .Content {
+        width: 100%;
+        border-bottom: 2px solid var(--color-black);
+        flex-direction: column;
+    }
+
+    .Content-wrapper {
+        border-top: 2px solid var(--color-black);
+        border-left: 0px;
+        padding: 2rem;
+    }
+
+    .Content-h2 {
+        margin: 2rem;
+    }
+}
+
+/*-- Proyecto
+     Descripción: los estilos de la introducción.
+     Estructura:
+     - Proyecto
+     - Proyecto-img
+--*/
+
+
+.Proyecto {
+    width: 100%;
+    padding: 2rem;
+}
+
+.Proyecto-img {
+    width: 90%;
+    margin: auto;
+}
+/*-- Footer
+     Descripción: estilos de la sección "Contact".
+     Estructura:
+     - Footer-h5
+     - Flechaup
+     - Flechaup-svg
+--*/
+
+.Footer-h5 {
+ text-align: center;
+ margin-bottom: 1rem;
+}
+
+/*-- Este es el componente de la flecha que está fija que lleva hacia arriba --*/
+.Flechaup {
+    width: 3.5rem;
+    padding: 0.2rem;
+    background-color: var(--color-yellow);
+    border: 2px solid var(--color-black);
+
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+}
+
+.Flechaup-svg {
+
+    fill: var(--color-black);
+    color: var(--color-black);
+}
