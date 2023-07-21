@@ -416,6 +416,10 @@ p {
     .Intro {
         height: 130vh;
     }
+    .Intro-h3 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -428,6 +432,7 @@ p {
     .Intro {
         height: 180vh;
     }
+    
 }
 
 @media (max-width: 300px) {
